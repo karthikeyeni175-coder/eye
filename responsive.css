@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* Laptop / Small Desktop */
+@media (max-width: 1200px) {
+  .grid-4 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Tablet Landscape */
+@media (max-width: 992px) {
+  .grid-4, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Update navbar for mobile later in home.css */
+}
+
+/* Tablet Portrait / Large Mobile */
+@media (max-width: 768px) {
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Ultra Small Mobile (Galaxy Z Fold 5, iPhone SE, etc. ~340px - 380px) */
+@media (max-width: 380px) {
+  .section {
+    padding: 30px 0;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Treatment Journey adjustments for Ultra Small screens */
+  .treatment-timeline::before {
+    left: 20px !important;
+  }
+  .t-icon-wrapper {
+    left: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .t-icon {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 1rem !important;
+  }
+  .t-content {
+    width: calc(100% - 60px) !important;
+    margin-left: 60px !important;
+    padding: 20px !important;
+  }
+  .t-num {
+    font-size: 4rem !important;
+    top: -5px !important;
+  }
+  .t-text h3 {
+    font-size: 1.15rem !important;
+  }
+  .t-text p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Stats Grid */
+  .stats-container {
+    grid-template-columns: 1fr !important;
+  }
+}
